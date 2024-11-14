@@ -1,6 +1,4 @@
 # projetos-faculdade
  Projetos Acadêmicos
 
-http://127.0.0.1:3000/index.html
-<br>
-http://127.0.0.1:3000/index.html.git
+<a href="https://Users/duduj/OneDrive/Documentos/Estudos/projetos-faculdade/Projeto-SantaMena/index.html">Projeto: Site Paróquia Santa Mena </a>
