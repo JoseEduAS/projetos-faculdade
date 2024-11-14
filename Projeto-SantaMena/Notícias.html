@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Versão Mobile-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Versão de Outros monitores-->
+    <link rel="stylesheet" href="style2.css">
+    <title>Paróquia Santa Mena - Guarulhos</title>
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <h1>Paróquia Santa Mena</h1>
+
+    <!--Menu fixo-->
+    <div id="nav-menufix">
+        <a href="index.html" target="_self">Home</a>
+        <a href="sobre.html"  target="_self" >Sobre</a>
+        <a href="#" class="active" target="_self">Notícias</a>
+        <a href="index.html#contato" target="_self">Contato</a>
+    </div>
+        <!-- Ícone do Menu Hamburguer -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    
+    <!-- Menu Interativo -->
+    <nav class="nav-menu">
+        <!-- Botão de Fechar -->
+        <div class="close-menu" onclick="toggleMenu()">×</div>
+        <ul>
+            <li><a href="index.html" target="_self" onclick="toggleMenu()">Home</a></li>
+            
+            <li><a href="Notícias.html" target="_self" onclick="toggleMenu()">Notícias</a></li>
+            
+            <li><a href="index.html#contato" onclick="toggleMenu()">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!--Notícias-->
+    
+    <!-- Rodapé -->
+    <footer>
+
+        <h1 class="txtfooter" style="font-size: 1.5em;">Redes Sociais</h1>
+        <br>
+        <div class="img-footer">
+            <div id="img-footer">
+                <a href="https://www.facebook.com/paroquiasantamena" target="_blank"><div class="img-face"></div></a>
+
+                <a href="https://www.instagram.com/paroquiasantamena/#" target="_blank"><div class="img-inst"></div></a>
+
+                <a href="https://www.youtube.com/user/paroquiasmena" target="_blank"><div class="img-ytb"></div></a>
+            </div>
+        </div>
+        </div>
+
+        <br><br>
+
+        <p>&copy; 2023 Paróquia Santa Mena. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

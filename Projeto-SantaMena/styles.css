@@ -1,0 +1,259 @@
+/*MOBILE*/
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #005b96;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+#nav-menufix{
+    display: none;
+}
+
+/* Ícone do menu hamburguer */
+.menu-icon {
+    background-color: #004d81;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    position: static;
+    top: 1.2em;
+    right: 1em;
+}
+
+/* Menu interativo */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #005b96f2;
+    padding-top: 4em;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Botão de fechar o menu */
+.close-menu {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Tornar o menu visível quando a classe "open" é adicionada */
+.nav-menu.open {
+    transform: translateY(0);
+}
+
+/* Menu hamburguer para telas menores */
+    .menu-icon {
+        display: block;
+    }
+
+/* Seções */
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+#img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.sobre-img1{
+    background: #004d81 url(imagens/frente/igreja-de-frente.jpg) center no-repeat;
+    background-size: cover;
+    width: 260px;
+    height: 260px;
+    border-radius: 10px 10px 0px 0;
+}
+.sobre-img2{
+    background: #004d81 url(imagens/frente/part-dentro-igreja.jpg) center no-repeat;
+    background-size: cover;
+    width: 260px;
+    height: 260px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#sobre {
+    background-color: #eeeef3;
+}
+#sobre > p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#eventos {
+    background-color: #c4d4fa;
+}
+
+#contato {
+    background-color: #eeeef3;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+iframe{
+    width: 80%;
+    height: 160px;
+}
+
+.img-footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#img-footer{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.img-face{
+    background-image: url(imagens/logos/facebook-logo-dark.png);
+    background-size: 63px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    
+}
+.img-inst{
+    background-image: url(imagens/logos/instagram-logo-dark.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+
+
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+
+}
+.img-ytb{
+    background-image: url(imagens/logos/youtube-logo-dark.png);
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-color: #fff;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+/*Página sobre*/
+
+#sec-sobre{
+    background-color: #eeeef3;
+}
+
+#members{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-mem1, .img-mem2, .img-mem3{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.img-mem1, .img-mem2, .img-mem3 > p{
+    font-size: .8em;
+}
+
+.img-mem1 > img{
+    
+    background-position: center;
+    background-size: cover ;
+    height: 130px;
+    width: 130px;
+    margin: 0px 3px 0px 0px;
+}
+.img-mem2 > img{
+
+    background-position: center;
+    background-size: cover ;
+    height: 130px;
+    width: 130px;
+    margin: 0px;
+}
+.img-mem3 > img{
+
+    background-position: center;
+    background-size: cover ;
+    height: 130px;
+    width: 130px;
+    margin: 0px 0px 0px 4px;
+}

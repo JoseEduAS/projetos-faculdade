@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imagens/logos/logo-minimalista.jpeg" type="image/x-icon">
+    <!--Versão Mobile-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Versão de Outros monitores-->
+    <link rel="stylesheet" href="style2.css">
+    <title>Paróquia Santa Mena - Guarulhos</title>
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <h1>Paróquia Santa Mena</h1>
+
+    <!--Menu fixo-->
+    <div id="nav-menufix">
+        <a href="index.html" target="_self">Home</a>
+        <a href="#" class="active" target="_self" >Sobre</a>
+        <a href="Notícias.html" target="_self">Notícias</a>
+        <a href="index.html#contato" target="_self">Contato</a>
+    </div>
+        <!-- Ícone do Menu Hamburguer -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    
+    <!-- Menu Interativo -->
+    <nav class="nav-menu">
+        <!-- Botão de Fechar -->
+        <div class="close-menu" onclick="toggleMenu()">×</div>
+        <ul>
+            <li><a href="index.html" target="_self" onclick="toggleMenu()">Home</a></li>
+            
+            <li><a href="Notícias.html" target="_self" onclick="toggleMenu()">Notícias</a></li>
+            
+            <li><a href="index.html#contato" onclick="toggleMenu()">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção de Introdução -->
+    <section id="sec-sobre">
+        <h1>História da Paróquia</h1>
+        <p>A Paróquia Santa Mena, localizada no Jardim Santa Mena, em Guarulhos, foi fundada em 1981. Ela tem uma ligação especial com Santa Mena, uma santa de origem francesa, sendo uma das poucas paróquias no Brasil dedicadas a ela. A igreja foi estabelecida após o esforço da comunidade local, que anteriormente se reunia em uma capela na região para catequese e celebrações religiosas. A festa da padroeira ocorre anualmente no dia 3 de outubro, destacando a devoção dos fiéis da paróquia​</p>
+
+        <br>
+        
+        <h2>Contribuições</h2>
+        <p>A Paróquia Santa Mena desempenha um papel significativo na sociedade, promovendo valores cristãos e apoio comunitário. Ela realiza ações sociais importantes, incluindo assistência a famílias carentes, distribuição de alimentos, e programas de evangelização. Além disso, organiza grupos de jovens e iniciativas voltadas para o desenvolvimento pessoal e espiritual, fortalecendo o senso de solidariedade e apoio mútuo. As celebrações e atividades pastorais da paróquia também incentivam a união e o fortalecimento dos laços da comunidade local​</p>
+
+        <br>
+
+        <h2>Eventos</h2>
+
+        <p>A Paróquia Santa Mena organiza diversos eventos que incentivam a união e a espiritualidade na comunidade. Entre os principais estão a Festa de Santa Mena, realizada em outubro com missas e uma grande quermesse, além de eventos como o “Terço na Praça” no Bosque Maia, promovendo orações em espaços públicos. A paróquia também realiza encontros de catequese, missas festivas, e atividades pastorais voltadas para o desenvolvimento espiritual e social dos fiéis, reforçando seu papel na vida comunitária de Guarulhos​
+        </p>
+
+        <br>
+
+        <h2>Membros da Paróquia</h2>
+        <p>A Paróquia Santa Mena de Guarulhos é liderada pelo <strong>Pároco Padre Thiago Ramos</strong>, que é responsável pelas atividades pastorais e celebrações litúrgicas, além de coordenar ações sociais e comunitárias da paróquia. Além do padre, a paróquia conta com o apoio de <strong>dois diáconos permanentes</strong>, <strong>Márcio Eduardo e Augusto César</strong>, que auxiliam nas missas, sacramentos e outras necessidades da comunidade​
+        </p>
+
+        <p>Esses líderes, juntamente com a equipe de pastoral e voluntários, organizam eventos e desenvolvem projetos para atender as necessidades espirituais e sociais dos fiéis.</p>
+        <br>
+        <div id="members">
+                <div class="members">
+                    
+                    <div class="img-mem1"><img src="imagens/frente/pe_tiago.png" alt=""><p class="name-mem"><strong>Pároco:</strong> Pe. Thiago Ramos</p></div>
+
+                    <div class="img-mem2"><img src="imagens/frente/diacono_marcio2.png" alt=""><p class="name-mem"><strong>Diácono Permanente: </strong>Márcio Eduardo</p>
+                    </div>
+
+                    <div class="img-mem3"><img src="imagens/frente/diac_augusto-cesar.png" alt=""><p class="name-mem"><strong>Diácono Permanente:</strong> Augusto César</p></div>
+                    
+            </div>
+    </section>
+    <!-- Rodapé -->
+    <footer>
+
+        <h1 class="txtfooter" style="font-size: 1.5em;">Redes Sociais</h1>
+        <br>
+        <div class="img-footer">
+            <div id="img-footer">
+                <a href="https://www.facebook.com/paroquiasantamena" target="_blank"><div class="img-face"></div></a>
+
+                <a href="https://www.instagram.com/paroquiasantamena/#" target="_blank"><div class="img-inst"></div></a>
+
+                <a href="https://www.youtube.com/user/paroquiasmena" target="_blank"><div class="img-ytb"></div></a>
+            </div>
+        </div>
+        </div>
+
+        <br><br>
+
+        <p>&copy; 2023 Paróquia Santa Mena. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

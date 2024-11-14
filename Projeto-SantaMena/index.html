@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imagens/logos/logo-minimalista.jpeg" type="image/x-icon">
+    <!--Versão Mobile-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Versão de Outros monitores-->
+    <link rel="stylesheet" href="style2.css">
+    <title>Paróquia Santa Mena - Guarulhos</title>
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <h1>Paróquia Santa Mena</h1>
+        <!--Menu fixo-->
+        <div id="nav-menufix">
+            <a href="#" class="active" target="_self" >Home</a>
+            <a href="sobre.html" target="_self" >Sobre</a>
+            <a href="Notícias.html" target="_self">Notícias</a>
+            <a href="#contato" target="_self">Contato</a>
+        </div>
+        
+        <!-- Ícone do Menu Hamburguer -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+    
+    <!-- Menu Interativo -->
+    <nav class="nav-menu">
+        <!-- Botão de Fechar -->
+        <div class="close-menu" onclick="toggleMenu()">×</div>
+        <ul>
+            <li><a href="sobre.html" target="_self" onclick="toggleMenu()">Sobre</a></li>
+            <li><a href="Notícias.html" target="_self" onclick="toggleMenu()">Notícias</a></li>
+            <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção de Introdução -->
+    <section id="sobre">
+        <h2>Bem-vindo à Paróquia Santa Mena</h2>
+        <p>A Paróquia Santa Mena foi fundada em 1981 para servir a comunidade católica de Guarulhos. Nossa missão é evangelizar, acolher e oferecer apoio espiritual e social à nossa comunidade.</p>
+        <div id="img">
+            <div class="sobre-img1"></div>
+            <div class="sobre-img2"></div>
+        </div>
+    </section>
+
+    <!-- Seção de Eventos -->
+    <section id="eventos">
+        <h2>Eventos e Atividades</h2>
+        <ul>
+            <li>Missa de Domingo: 10h e 19h</li>
+            <li>Grupo de Oração: Quintas-feiras, às 20h</li>
+            <li>Catequese Infantil: Sábados, às 9h</li>
+        </ul>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d769.4774090948254!2d-46.54169768321713!3d-23.45064980503465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef510ea6d0323%3A0x1783f887a93ad68a!2sPar%C3%B3quia%20Santa%20Mena!5e0!3m2!1spt-BR!2sbr!4v1731605083868!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <p>Endereço: Av. Suplicy, 197 - Jardim Santa Mena, Guarulhos - SP, 07096-000</p>
+        <p>Telefone: (11) 2455-9434</p>
+        <p>Email: contato@paroquiasantamena.com.br</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+
+        <h1 class="txtfooter" style="font-size: 1.5em;">Redes Sociais</h1>
+        <br>
+        <div class="img-footer">
+            <div id="img-footer">
+                <a href="https://www.facebook.com/paroquiasantamena" target="_blank"><div class="img-face"></div></a>
+
+                <a href="https://www.instagram.com/paroquiasantamena/#" target="_blank"><div class="img-inst"></div></a>
+
+                <a href="https://www.youtube.com/user/paroquiasmena" target="_blank"><div class="img-ytb"></div></a>
+            </div>
+        </div>
+        </div>
+
+        <br><br>
+
+        <p>&copy; 2023 Paróquia Santa Mena. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
