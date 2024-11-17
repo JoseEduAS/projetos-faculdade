@@ -213,3 +213,12 @@ iframe{
     width: 35px;
     border-radius: 100%;
 }
+
+.aviso{
+    font-size: .6em;
+    color: rgb(66, 105, 105);
+
+}
+.aviso > a{
+    color: rgb(66, 105, 105);
+}

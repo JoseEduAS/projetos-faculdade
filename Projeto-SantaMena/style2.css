@@ -114,4 +114,8 @@
     max-height: 100%;
     object-fit: cover;
 }
+
+.aviso{
+    font-size: .9em;
+}
 }
