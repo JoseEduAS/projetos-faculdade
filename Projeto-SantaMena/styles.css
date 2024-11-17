@@ -151,9 +151,17 @@ footer {
     margin-top: 2em;
 }
 
-iframe{
+.iframe{
     width: 80%;
     height: 160px;
+    border: 2px solid black;
+    padding: 3px;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+
 }
 
 .img-footer{
@@ -182,7 +190,7 @@ iframe{
 }
 .img-inst{
     background-image: url(imagens/logos/instagram-logo-dark.png);
-    background-size: 40px;
+    background-size: 45px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fff;
@@ -204,56 +212,4 @@ iframe{
     height: 35px;
     width: 35px;
     border-radius: 100%;
-}
-
-/*Página sobre*/
-
-#sec-sobre{
-    background-color: #eeeef3;
-}
-
-#members{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    width: 100%;
-}
-.members{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.img-mem1, .img-mem2, .img-mem3{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-.img-mem1, .img-mem2, .img-mem3 > p{
-    font-size: .8em;
-}
-
-.img-mem1 > img{
-    
-    background-position: center;
-    background-size: cover ;
-    height: 130px;
-    width: 130px;
-    margin: 0px 3px 0px 0px;
-}
-.img-mem2 > img{
-
-    background-position: center;
-    background-size: cover ;
-    height: 130px;
-    width: 130px;
-    margin: 0px;
-}
-.img-mem3 > img{
-
-    background-position: center;
-    background-size: cover ;
-    height: 130px;
-    width: 130px;
-    margin: 0px 0px 0px 4px;
 }

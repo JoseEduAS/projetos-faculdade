@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imagens/logos/logo-igreja.jpg" type="image/x-icon">
+
     <!--Versão Mobile-->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="noticias.css">
+
     <!--Versão de Outros monitores-->
     <link rel="stylesheet" href="style2.css">
+
     <title>Paróquia Santa Mena - Guarulhos</title>
 </head>
 <body>
 
     <!-- Cabeçalho e Navegação -->
-    <header>
+<header>
         <h1>Paróquia Santa Mena</h1>
-
-    <!--Menu fixo-->
-    <div id="nav-menufix">
-        <a href="index.html" target="_self">Home</a>
-        <a href="sobre.html"  target="_self" >Sobre</a>
-        <a href="#" class="active" target="_self">Notícias</a>
-        <a href="index.html#contato" target="_self">Contato</a>
-    </div>
+        <!--Menu fixo-->
+        <div id="nav-menufix">
+            <a href="index.html"target="_self" >Home</a>
+            <a href="sobre.html" target="_self" >Sobre</a>
+            <a class="active"  href="Notícias.html" target="_self">Notícias</a>
+            <a href="index.html#contato" target="_self">Contato</a>
+        </div>
+        
         <!-- Ícone do Menu Hamburguer -->
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     </header>
@@ -32,15 +38,172 @@
         <div class="close-menu" onclick="toggleMenu()">×</div>
         <ul>
             <li><a href="index.html" target="_self" onclick="toggleMenu()">Home</a></li>
-            
-            <li><a href="Notícias.html" target="_self" onclick="toggleMenu()">Notícias</a></li>
-            
-            <li><a href="index.html#contato" onclick="toggleMenu()">Contato</a></li>
+            <li><a href="sobre.html" target="_self" onclick="toggleMenu()">Sobre</a></li>
+
+            <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
         </ul>
     </nav>
-
-    <!--Notícias-->
     
+    <!-- Menu Interativo -->
+    <!--Seção1-->
+    <section>
+        <h1 class="n-h1">Notícias</h1>
+        <br>
+        <h2 class="n-h2" style="text-align: center;">Santa Missa de Fiéis Defuntos no Cemitério</h2>
+        <br>
+        <p class="n-p">A Comemoração de Todos os Fiéis Defuntos na Diocese de Guarulhos ocorreu no sábado, 02 de novembro, ocorreram em todos os cemitérios pertencentes ao território Diocesano. A principal Missa aconteceu o Cemitério São Judas Tadeu – no Picanço, às 08h, presidida por Dom Edmilson Amador Caetano, Bispo de Guarulhos, e concelebrada pelo Padre Thiago Ramos, Pároco da Paróquia Santa Mena e Vigário Forâneo da região.
+        </p>
+        <br>
+        <p class="n-p">
+            Dom Edmilson, ao final da celebração, visitou o túmulo pertencente à Diocese de Guarulhos, onde rezou pelos padres que ali se encontram na Morada Eterna.
+            <br>
+            Em todas as celebrações a presença dos fiéis foi relevante e participativa na visitação em todos os cemitérios da cidade.
+            </p>
+
+            <br>
+
+        <div class="gallery-wrapper">
+            <!--Botão-->
+            <button class="arrow left" onclick="scrollGallery('left')">&#8249;</button>
+
+            <!--Slide-->
+            <div class="photo-container" id="photo-container">
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img2.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img1.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img3.jpg" alt="Foto 1"></div>
+                
+                <div class="photo-item"><img src="imagens/img-noticias/n-img4.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img5.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img6.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img7.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img8.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img9.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img10.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img11.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img12.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img13.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img14.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img15.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img16.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img17.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img18.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img19.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n-img20.jpg" alt="Foto 1"></div>
+
+            </div>
+            <!--Botão-->
+            <button class="arrow right" onclick="scrollGallery('right')">&#8250;</button>
+        </div>
+        <sub>4 de novembro de 2024</sub>
+    </section>
+
+    <!--Seção2-->
+    <section>
+        <h2 class="n-h2" style="text-align: center;">Paróquia Santa Mena realiza trezena de Nossa Senhora de Fátima em sua comunidade</h2>
+
+        <br>
+        
+        <p>Aconteceu do dia 1 a 13 de maio a Festa da Padroeira Nossa Senhora de Fátima (Comunidade da Paróquia Santa Mena), tendo a Abertura com a missa presidida pelo Bispo Dom Edmilson, no dia de São José Operário. Com muita alegria acolhemos os padres que vieram celebrar conosco nestes dias e o povo de Deus que foi perseverante na participação.</p>
+
+        <br>
+        
+        <p>Encerramos no dia 13 de maio com uma programação de atividades devocionais do Terço, ofício de Nossa Senhora, Adoração Eucarística e a Santa Missa com coroação e Procissão Luminosa.
+        </p>
+        
+        <br>
+        
+        <p>Que a Virgem de Fátima interceda por todos nós.</p>
+        <br>
+
+        <div class="gallery-wrapper">
+            <!--Botão-->
+            <button class="arrow left" onclick="scrollGallery('left')">&#8249;</button>
+
+            <!--Slide-->
+            <div class="photo-container" id="photo-container">
+
+                <div class="photo-item"><img src="imagens/img-noticias/n2/n2-img1.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n2/n2-img2.jpg" alt="Foto 2"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n2/n2-img3.jpg" alt="Foto 3"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n2/n2-img4.jpg" alt="Foto 4"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n2/n2-img5.jpg" alt="Foto 5"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n2/n2-img6.jpg" alt="Foto 6"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n2/n2-img7.jpg" alt="Foto 7"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n2/n2-img8.jpg" alt="Foto 8"></div>
+
+            </div>
+            <!--Botão-->
+            <button class="arrow right" onclick="scrollGallery('right')">&#8250;</button>
+        </div>
+
+        <sub>17 de maio de 2024</sub>
+
+    </section>
+
+    <!--Seção3-->
+    <section>
+        <h2 class="n-h2">Paróquia Santa Mena promove “Terço na Praça” no Bosque Maia</h2>
+        <br>
+        <p>Aconteceu no dia 25 de maio, no Bosque Maia, o “Terço na Praça”. Momento de oração do santo Terço, como gesto concreto deste ano mariano.</p>
+        <br>
+        <p>Contamos com a presença do povo de nossas comunidades e pastorais, como também os padres de nossa Paróquia Santa Mena e Área Pastoral São Judas, diácono e autoridades civis.</p>
+        <br>
+        <p>Que a Virgem Santíssima interceda por todos.</p>
+
+        <div class="gallery-wrapper">
+            <!--Botão-->
+            <button class="arrow left" onclick="scrollGallery('left')">&#8249;</button>
+
+            <!--Slide-->
+            <div class="photo-container" id="photo-container">
+
+                <div class="photo-item"><img src="imagens/img-noticias/n3/n3-img1.jpg" alt="Foto 1"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n3/n3-img2.jpg" alt="Foto 2"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n3/n3-img3.jpg" alt="Foto 3"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n3/n3-img4.jpg" alt="Foto 4"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n3/n3-img5.jpg" alt="Foto 5"></div>
+
+                <div class="photo-item"><img src="imagens/img-noticias/n3/n3-img6.jpg" alt="Foto 6"></div>
+
+            </div>
+
+            <!--Botão-->
+            <button class="arrow right" onclick="scrollGallery('right')">&#8250;</button>
+        </div>
+
+        <sub>27 de maio de 2024</sub>
+    </section>
+
     <!-- Rodapé -->
     <footer>
 

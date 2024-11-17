@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*Página sobre*/
+
+#sec-sobre{
+    background-color: #eeeef3;
+}
+
+#members{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-mem1, .img-mem2, .img-mem3{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.img-mem1, .img-mem2, .img-mem3 > p{
+    font-size: .8em;
+}
+
+.img-mem1 > img{
+    
+    background-position: center;
+    background-size: cover ;
+    height: 130px;
+    width: 130px;
+    margin: 0px 3px 0px 0px;
+}
+.img-mem2 > img{
+
+    background-position: center;
+    background-size: cover ;
+    height: 130px;
+    width: 130px;
+    margin: 0px;
+}
+.img-mem3 > img{
+
+    background-position: center;
+    background-size: cover ;
+    height: 130px;
+    width: 130px;
+    margin: 0px 0px 0px 4px;
+}
