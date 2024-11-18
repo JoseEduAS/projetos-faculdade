@@ -1,0 +1,100 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #004d81;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container do formulário */
+.contact-container {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.contact-container h1 {
+    color: #005b96;
+    margin-bottom: 0.5em;
+}
+
+.contact-container p {
+    color: #555;
+    margin-bottom: 1em;
+}
+
+/* Estilos do formulário */
+.form-group {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 0.75em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+.enviar {
+    background-color: #005b96;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enviar:hover {
+    background-color: #004080;
+}
+.limpar {
+    background-color: #65aeee;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.limpar:hover {
+    background-color: #004080;
+    color: #ffffff;
+}
+
+/* Mensagem de sucesso */
+#successMessage {
+    color: green;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+    .contact-container{
+        height: auto;
+        padding: 10px;
+    }
+}

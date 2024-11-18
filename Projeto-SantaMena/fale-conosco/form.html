@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Fale Conosco</h1>
+        <p>Entre em contato conosco preenchendo o formulário abaixo. Retornaremos o mais breve possível!</p>
+
+        <form name="fale_conosco" id="contactForm" action="salvar.php" method="post">
+            <div class="form-group">
+                <label for="txtnome">Nome:</label>
+                <input type="text" id="name" name="txtnome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="txtemail">E-mail:</label>
+                <input type="email" id="email" name="txtemail" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="txtassunto">Assunto:</label>
+                <input type="text" id="subject" name="txtassunto" placeholder="Digite o assunto" required>
+            </div>
+            <div class="form-group">
+                <label for="txtmensagem">Mensagem:</label>
+                <textarea id="message" name="txtmensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+            <input type="submit" value="Enviar" class="enviar">;
+            <input type="reset" value="Limpar" class="limpar">
+        </form>
+        <div id="successMessage" class="hidden">Mensagem enviada com sucesso!</div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
